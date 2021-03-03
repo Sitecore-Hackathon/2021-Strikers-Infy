@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sitecore.XConnect.DataTools.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:Sitecore.XConnect.DataTools.Abstractions.Conditions.ICondition">
+            <summary>
+            Defines predicate for selecting <see cref="T:Sitecore.XConnect.Contact"/> by some condition.
+            </summary>
+        </member>
+        <member name="M:Sitecore.XConnect.DataTools.Abstractions.Conditions.ICondition.IsAccepted(Sitecore.XConnect.Contact)">
+            <summary>
+            Determines whether the specified contact is accepted.
+            </summary>
+            <param name="contact">The <see cref="T:Sitecore.XConnect.Contact"/>.</param>
+            <returns>
+              <c>true</c> if the specified contact is accepted; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="P:Sitecore.XConnect.DataTools.Abstractions.Conditions.ICondition.ConditionId">
+            <summary>
+            Gets the condition identifier.
+            </summary>
+        </member>
+    </members>
+</doc>

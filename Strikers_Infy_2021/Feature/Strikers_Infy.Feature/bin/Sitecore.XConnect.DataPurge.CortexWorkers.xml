@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sitecore.XConnect.DataPurge.CortexWorkers</name>
+    </assembly>
+    <members>
+        <member name="T:Sitecore.XConnect.DataPurge.CortexWorkers.DataPurgeOptions">
+            <summary>
+            Represents options used to configure data purge tasks.
+            </summary>
+        </member>
+        <member name="M:Sitecore.XConnect.DataPurge.CortexWorkers.DataPurgeOptions.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sitecore.XConnect.DataPurge.CortexWorkers.DataPurgeOptions"/> class.
+            </summary>
+            <param name="options">The configuration to read the options from.</param>
+        </member>
+        <member name="M:Sitecore.XConnect.DataPurge.CortexWorkers.DataPurgeOptions.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sitecore.XConnect.DataPurge.CortexWorkers.DataPurgeOptions"/> class.
+            </summary>
+            <param name="minimumContactCutoffDays">
+            The minimum number of days the contact hasn't been interacted with the brand
+            that can be specified for contacts data purge.
+            </param>
+        </member>
+        <member name="P:Sitecore.XConnect.DataPurge.CortexWorkers.DataPurgeOptions.MinimumContactCutoffDays">
+            <summary>
+            Gets the minimum number of days the contact hasn't been interacted with the brand
+            that can be specified for contacts data purge.
+            </summary>
+        </member>
+        <member name="T:Sitecore.XConnect.DataPurge.CortexWorkers.DeleteContactsDistributedWorker">
+            <summary>
+            Defines Cortex Processing distributed worker for data purging, that reads already filtered contacts in batches
+            from an external data source and perform delete operation on that data.
+            </summary>
+        </member>
+        <member name="M:Sitecore.XConnect.DataPurge.CortexWorkers.DeleteContactsDistributedWorker.#ctor(System.Collections.Generic.IEnumerable{Sitecore.XConnect.DataTools.Abstractions.Conditions.ICondition},Microsoft.Extensions.Logging.ILogger,Sitecore.XConnect.IXdbContext,Sitecore.XConnect.DataPurge.Tasks.Options.Workers.DeleteContactsDistributedWorkerOptionsDictionary)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sitecore.XConnect.DataPurge.CortexWorkers.DeleteContactsDistributedWorker" /> class.
+            </summary>
+            <param name="conditions">The conditions used to check whether a contact should be deleted.</param>
+            <param name="logger">The logger.</param>
+            <param name="xdbContext">The Xdb Context to execute operations in XConnect.</param>
+            <param name="options">The distributed worker options dictionary.</param>
+        </member>
+        <member name="M:Sitecore.XConnect.DataPurge.CortexWorkers.DeleteContactsDistributedWorker.#ctor(System.Collections.Generic.IEnumerable{Sitecore.XConnect.DataTools.Abstractions.Conditions.ICondition},Microsoft.Extensions.Logging.ILogger,Sitecore.XConnect.IXdbContext,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sitecore.XConnect.DataPurge.CortexWorkers.DeleteContactsDistributedWorker" /> class.
+            </summary>
+            <param name="conditions">The conditions used to check whether a contact should be deleted.</param>
+            <param name="logger">The logger.</param>
+            <param name="xdbContext">The Xdb Context to execute operations in XConnect.</param>
+            <param name="options">The distributed worker options dictionary.</param>
+        </member>
+        <member name="M:Sitecore.XConnect.DataPurge.CortexWorkers.DeleteContactsDistributedWorker.ProcessBatchAsync(System.Collections.Generic.IReadOnlyList{Sitecore.XConnect.Contact},System.Threading.CancellationToken)">
+            <summary>
+            Method invoked when worker receives a batch of <see cref="T:Sitecore.XConnect.Contact" /> type entities.
+            </summary>
+            <param name="batch">The batch of contacts to process.</param>
+            <param name="token">Cancellation token that will indicate that request is canceled.</param>
+            <returns><see cref="T:System.Threading.Tasks.Task" /> object that represents state of asynchronous operation.</returns>
+        </member>
+        <member name="M:Sitecore.XConnect.DataPurge.CortexWorkers.DeleteContactsDistributedWorker.Dispose">
+            <summary>
+            Disposes xdb context.
+            </summary>
+        </member>
+        <member name="T:Sitecore.XConnect.DataPurge.CortexWorkers.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Sitecore.XConnect.DataPurge.CortexWorkers.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Sitecore.XConnect.DataPurge.CortexWorkers.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Sitecore.XConnect.DataPurge.CortexWorkers.Resources.InvalidConditionMessageFormat">
+            <summary>
+              Looks up a localized string similar to Cannot run delete contacts worker. The condition is not found: {0}.
+            </summary>
+        </member>
+        <member name="P:Sitecore.XConnect.DataPurge.CortexWorkers.Resources.InvalidConditionsMessageFormat">
+            <summary>
+              Looks up a localized string similar to Cannot register delete contacts task. The following conditions are not found: {0}.
+            </summary>
+        </member>
+        <member name="P:Sitecore.XConnect.DataPurge.CortexWorkers.Resources.InvalidCutoffDaysMessageFormat">
+            <summary>
+              Looks up a localized string similar to Cannot register delete contacts task. Cutoff date time should not be less than {0} days. Actual value is {1} days..
+            </summary>
+        </member>
+        <member name="P:Sitecore.XConnect.DataPurge.CortexWorkers.Resources.RunWorkerMessageFormat">
+            <summary>
+              Looks up a localized string similar to Run Worker: {0}.
+            </summary>
+        </member>
+        <member name="P:Sitecore.XConnect.DataPurge.CortexWorkers.Resources.ValueShouldBeGreaterThanOrEqualToZero">
+            <summary>
+              Looks up a localized string similar to The value should be greater than or equal to zero.
+            </summary>
+        </member>
+        <member name="T:Sitecore.XConnect.DataPurge.CortexWorkers.TaskManagerDecorator">
+            <summary>
+            Decorator that is used to validate options for data purge task registration.
+            </summary>
+        </member>
+        <member name="M:Sitecore.XConnect.DataPurge.CortexWorkers.TaskManagerDecorator.RegisterDistributedTaskAsync(Sitecore.Processing.Engine.Abstractions.IDataSourceOptionsCollection,Sitecore.Processing.Engine.Abstractions.IDistributedWorkerOptionsCollection,System.Collections.Generic.IEnumerable{System.Guid},System.TimeSpan)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sitecore.XConnect.DataPurge.CortexWorkers.TaskManagerDecorator.RegisterDeferredTaskAsync(Sitecore.Processing.Engine.Abstractions.IDeferredWorkerOptionsCollection,System.Collections.Generic.IEnumerable{System.Guid},System.TimeSpan)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sitecore.XConnect.DataPurge.CortexWorkers.TaskManagerDecorator.GetTaskProgressAsync(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Sitecore.XConnect.DataPurge.CortexWorkers.TaskManagerDecorator.CancelTaskAsync(System.Guid)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
