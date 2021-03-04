@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{E7D6F4F8-9ED7-4499-A2D8-EFDE7262E193}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{24122BFE-03E6-4642-979D-521B60FB51BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{C68F09E4-8D3D-4905-A990-2EB8B9AB33BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrikersInfy.Project.Website", "src\Project\Website\code\StrikersInfy.Project.Website.csproj", "{ED4EF6E3-A223-451D-8A0C-2E7517BCEBD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{D59F1F52-0A60-4A91-BABE-7BE8B93FBB6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrikersInfy.Foundation.Extensions", "src\Foundation\Extensions\code\StrikersInfy.Foundation.Extensions.csproj", "{4B52BC4F-9FC0-4403-AE06-5F6A9B2F5887}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED4EF6E3-A223-451D-8A0C-2E7517BCEBD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED4EF6E3-A223-451D-8A0C-2E7517BCEBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED4EF6E3-A223-451D-8A0C-2E7517BCEBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED4EF6E3-A223-451D-8A0C-2E7517BCEBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B52BC4F-9FC0-4403-AE06-5F6A9B2F5887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B52BC4F-9FC0-4403-AE06-5F6A9B2F5887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B52BC4F-9FC0-4403-AE06-5F6A9B2F5887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B52BC4F-9FC0-4403-AE06-5F6A9B2F5887}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED4EF6E3-A223-451D-8A0C-2E7517BCEBD6} = {C68F09E4-8D3D-4905-A990-2EB8B9AB33BA}
+		{D59F1F52-0A60-4A91-BABE-7BE8B93FBB6D} = {E7D6F4F8-9ED7-4499-A2D8-EFDE7262E193}
+		{4B52BC4F-9FC0-4403-AE06-5F6A9B2F5887} = {D59F1F52-0A60-4A91-BABE-7BE8B93FBB6D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {8C4320E4-DCF4-439A-AC40-BDAECFA42861}
+	EndGlobalSection
+EndGlobal
