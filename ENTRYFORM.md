@@ -24,6 +24,7 @@ Within Sitecore they can simply open the translator and translate the content an
 This module uses Azure Cognitive Services to translate the content. We are using Free version of the service which provides translation for 2 million words per month. 
 If user requirement is exceeded the limit, we can always upgrade the Pricing tier in Azure.
 
+Details Documentation is added in this docuemnt. Download and read if need more clarification.
 https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/blob/7681c3abe4a638ff9bcdc1c04ce4bb9570a2fb69/docs/Strikers_Infy_Sitecore%20Hackathon%20-2021.docx
 
 ## Video link
