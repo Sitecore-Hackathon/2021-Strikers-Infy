@@ -40,18 +40,20 @@ We have created two sitecore packages. Install this two packages using standard 
 ## Sitecore Package files to be installed 
 1. https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/blob/634a884f035f683ea1fd9198d1fc9050942eae75/Sitecore%20Packages/Languages_Pkg_2021_03_06_001.zip
 2. https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/blob/634a884f035f683ea1fd9198d1fc9050942eae75/Sitecore%20Packages/Translator_Pkg_2021_03_06_001.zip
-> Login to Sitecore Admin
-> Click Desktop
-> Open Development Tools and Select Instalation Wizard
-> Upload the Package Translator_Pkg_2021_03_06_001.zip
-> Click Next and select Install
-> Repeat the Installation process for the second package Languages_Pkg_2021_03_06_001.zip
+
+# Instruction for packiage installation
+1. Login to Sitecore Admin.
+2. Click Desktop
+3. Open Development Tools and Select Instalation Wizard
+4. Upload the Package Translator_Pkg_2021_03_06_001.zip
+5. Click Next and select Install
+6. Repeat the Installation process for the second package Languages_Pkg_2021_03_06_001.zip
 
 ## Visual Studio Publish
 Once the two package are Installed Open the solution in visual studio Publish the Feature/Transator/StrikersInfy.Feature.Translator project.
-> Open Solution in Visual Studio 
-> Right Click on the Project Feature/Transator/StrikersInfy.Feature.Translator and click publish.
-> Choose the destination and click publish
+1. Open Solution in Visual Studio 
+2. Right Click on the Project Feature/Transator/StrikersInfy.Feature.Translator and click publish.
+3. Choose the destination and click publish
 
 ## Usage instructions
 ⟹ Provide documentation about your module, how do the users use your module, where are things located, what do the icons mean, are there any secret shortcuts etc.
