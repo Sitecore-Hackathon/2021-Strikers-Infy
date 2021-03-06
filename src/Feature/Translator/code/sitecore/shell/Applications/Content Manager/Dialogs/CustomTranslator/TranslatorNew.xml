@@ -3,56 +3,13 @@
     <TranslatorDialog>
         <FormDialog Icon="Network/32x32/link.png" Style="height: 300%" Header="Translate Content" Text="Translate your content using Microsoft Azure Cognitive Services">
             <Script Src="/sitecore/shell/Applications/Content Manager/Dialogs/CustomTranslator/jquery.js" />
-            <Script>
-                function clearData(element, evt)
-                {
-                    evt.preventDefault();
-                    var textFrom = document.getElementById("TextFrom");
-                    textFrom.value="";
-                    var respElm = document.getElementById("ResultText");
-                    respElm.innerText="";
-                }
-                function translateData(element, evt)
-                {
-                    evt.preventDefault();
-                    var textFrom = document.getElementById("TextFrom").value;
-                    var selectedlanguage = document.getElementById("TranslateLanguage").value;
-                    var parameters = JSON.stringify({LangCode:selectedlanguage,ContentText:textFrom});
-                    var respElm = document.getElementById("ResultText");
-                    respElm.innerText = "";
-
-                    $.ajax({
-                    async: true,
-                        type: "POST",
-                        url: "/api/Translator/TranslateContentAsync",
-                        data: parameters,
-                        contentType: "application/json; charset=utf-8",
-                        dataType: "json",
-                        success: function (data) {
-                            if(data!=null)
-                            {
-                                respElm.innerText = data;
-                            }
-                        },
-                        error: function (response) {
-                            if(response!=null)
-                            {
-                                var errorElm = document.getElementById("ErrorText");
-                                errorElm.innerText = response;
-                            }
-                        },
-                        failure: function (response) {
-
-                        }
-                    });
-                }
-            </Script>
+            <Script Src="/sitecore/shell/Applications/Content Manager/Dialogs/CustomTranslator/CustomTranslator.js" />         
             <style>
                 .scFormDialogFooter{
-                    display: none !important;
+                display: none !important;
                 }
                 .scFormDialogFooter .footerOkCancel{
-                    display: none !important;
+                display: none !important;
                 }
             </style>
 
@@ -68,8 +25,7 @@
                                 <Literal Text="Choose Language:" />
                             </Label>
                             <select id="TranslateLanguage">
-                                <option value="es">Spanish</option>
-                                <option value="fr">French</option>
+                              
                             </select>
                             <Label For="ResultText" GridPanel.NoWrap="true">
                                 <Literal Text="Result:" />

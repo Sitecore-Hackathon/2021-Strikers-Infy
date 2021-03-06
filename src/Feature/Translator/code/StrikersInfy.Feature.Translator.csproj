@@ -320,6 +320,7 @@
   <ItemGroup>
     <Content Include="App_Config\Include\zzz_Translator\TranslatorCommand.config" />
     <Content Include="App_Config\Include\zzz_Translator\RegisterRoutes.config" />
+    <Content Include="sitecore\shell\Applications\Content Manager\Dialogs\CustomTranslator\CustomTranslator.js" />
     <Content Include="sitecore\shell\Applications\Content Manager\Dialogs\CustomTranslator\jquery.js" />
     <Content Include="sitecore\shell\Applications\Content Manager\Dialogs\CustomTranslator\TranslatorNew.xml" />
     <None Include="Properties\PublishProfiles\Local Publish Debug.pubxml" />
@@ -327,9 +328,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\TranslatorController.cs" />
+    <Compile Include="Biz\LanguageMgmt.cs" />
     <Compile Include="Biz\TranslateMgmt.cs" />
     <Compile Include="Commands\TranslatorDialog.cs" />
     <Compile Include="Models\ContentProps.cs" />
+    <Compile Include="Models\LangProps.cs" />
     <Compile Include="Models\TranslationResponse.cs" />
     <Compile Include="Pipelines\RegisterRoutes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

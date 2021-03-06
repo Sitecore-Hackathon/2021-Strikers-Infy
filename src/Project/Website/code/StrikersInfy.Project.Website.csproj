@@ -301,6 +301,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\Local Publish debug.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

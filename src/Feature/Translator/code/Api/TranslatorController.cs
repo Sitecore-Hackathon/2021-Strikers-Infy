@@ -15,8 +15,16 @@ namespace StrikersInfy.Feature.Translator.Api
         [HttpPost]
         public async Task<string> TranslateContentAsync(ContentProps data)
         {
-            string resp = await TranslateMgmt.TranslateContent(data);
+            string resp = await TranslateMgmt.TranslateContent(data);           
             return resp;
+        }
+
+        [HttpPost]
+        public List<LangProps> GetActiveLanguages()
+        {
+            LanguageMgmt langMgmt = new LanguageMgmt();
+            List<LangProps> langsList = langMgmt.GetLanguages();
+            return langsList;
         }
     }
 }
