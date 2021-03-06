@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{99EB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Translator", "Translator", "{5EBD8DD3-B62C-429D-BE73-5DFFA221492A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "code", "src\Feature\Translator\code\code.csproj", "{43948286-E765-48B3-9CD9-0F76C5E88C26}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrikersInfy.Feature.Translator", "src\Feature\Translator\code\StrikersInfy.Feature.Translator.csproj", "{43948286-E765-48B3-9CD9-0F76C5E88C26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
