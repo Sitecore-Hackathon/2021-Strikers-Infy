@@ -44,12 +44,14 @@ https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/blob/7681c3abe4a638ff9b
 
 - Azure Cognitive Services - Azure Cognitive Service is required for this module to work.
 
-# Azure Cognitive Services Setup in Azure
+### Azure Cognitive Services Setup in Azure
 1. Login to https://portal.azure.com/
 2. Search for Translator in the search bar and select the “Translator” from marketplace
 ![image](https://user-images.githubusercontent.com/7092837/110209884-e53b1680-7eb4-11eb-9955-bf368962f6fe.png)
+
 3. Fill out the details and click Review and Finish
 ![image](https://user-images.githubusercontent.com/7092837/110209901-f84de680-7eb4-11eb-910c-8ca32a9e842f.png)
+
 4. Once the service is ready go to the created service and select the “Keys and Endpoint” tab
 ![image](https://user-images.githubusercontent.com/7092837/110209910-07cd2f80-7eb5-11eb-845d-c4702a25bac8.png)
 5. Copy the Keys and Location values from here and modify the values in Visual Studio Application
