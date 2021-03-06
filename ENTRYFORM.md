@@ -55,7 +55,9 @@ https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/blob/7681c3abe4a638ff9b
 
 4. Once the service is ready go to the created service and select the “Keys and Endpoint” tab
 ![image](https://user-images.githubusercontent.com/7092837/110209910-07cd2f80-7eb5-11eb-845d-c4702a25bac8.png)
+
 5. Copy the Keys and Location values from here and modify the values in Visual Studio Application
+
 6. Open Visual Studio and open Feature/Translator/ StrikersInfy.Feature.Translator/Biz/ TranslateMgmt.cs file and modify the values
 ![image](https://user-images.githubusercontent.com/7092837/110209919-203d4a00-7eb5-11eb-967e-246e79833611.png)
 
@@ -87,7 +89,9 @@ Once the two package are Installed Open the solution in visual studio Publish th
 3. Navigate to the Sitecore Ribbon -> Versions-> Translator as shown below in which the highlighted is the new feature that appears
 ![image](https://user-images.githubusercontent.com/7092837/110210019-a194dc80-7eb5-11eb-81b1-0ab784cf0fb8.png)
 
+
 4. Click on Translator, a dialog appears as below
+
 ![image](https://user-images.githubusercontent.com/7092837/110210032-b7a29d00-7eb5-11eb-8f68-eb4492bb8595.png)
 
 5.Provide the text that is to be translated in “From text” and choose desired language as below: 
@@ -99,13 +103,14 @@ Once the two package are Installed Open the solution in visual studio Publish th
 
 ### How to add Additional Language
 1. Navigate to path “/sitecore/system/Languages”
+
 2. Right Click on Langauge and choose Insert>Language
-![image](https://user-images.githubusercontent.com/7092837/110210123-431c2e00-7eb6-11eb-9cf6-dd295a96a279.png)
+   ![image](https://user-images.githubusercontent.com/7092837/110210123-431c2e00-7eb6-11eb-9cf6-dd295a96a279.png)
 
 3. Select the language you want and click finish the dialog
 ![image](https://user-images.githubusercontent.com/7092837/110210157-63e48380-7eb6-11eb-97aa-8f9a94ee2e04.png)
 
-4. Once Language is Added Select the language and update the Display Name under Appearence Tab. (If its not show Click the View tabd and select Standard Field)
+4. Once Language is Added Select the language and update the Display Name under Appearence Tab. (If its not show Click the View tabd and select Standard Field
 ![image](https://user-images.githubusercontent.com/7092837/110210215-9a220300-7eb6-11eb-9bfe-6212d9f53158.png)
 
 5. Now open the Translate dialog it will contain the new language added.
