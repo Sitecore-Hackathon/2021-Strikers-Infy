@@ -320,6 +320,8 @@
   <ItemGroup>
     <Content Include="App_Config\Include\zzz_Translator\TranslatorCommand.config" />
     <Content Include="App_Config\Include\zzz_Translator\RegisterRoutes.config" />
+    <Content Include="sitecore\shell\Applications\Content Manager\Dialogs\CustomTranslator\jquery.js" />
+    <Content Include="sitecore\shell\Applications\Content Manager\Dialogs\CustomTranslator\TranslatorNew.xml" />
     <None Include="Properties\PublishProfiles\Local Publish Debug.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>

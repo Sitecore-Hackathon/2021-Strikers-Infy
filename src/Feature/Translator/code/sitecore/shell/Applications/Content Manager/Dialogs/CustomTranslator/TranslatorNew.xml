@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<control xmlns="http://schemas.sitecore.net/Visual-Studio-Intellisense" xmlns:def="Definition">
+    <TranslatorDialog>
+        <FormDialog Icon="Network/32x32/link.png" Style="height: 300%" Header="Translate Content" Text="Translate your content using Microsoft Azure Cognitive Services">
+            <Script Src="/sitecore/shell/Applications/Content Manager/Dialogs/CustomTranslator/jquery.js" />
+            <Script>
+                function clearData(element, evt)
+                {
+                    evt.preventDefault();
+                    var textFrom = document.getElementById("TextFrom");
+                    textFrom.value="";
+                    var respElm = document.getElementById("ResultText");
+                    respElm.innerText="";
+                }
+                function translateData(element, evt)
+                {
+                    evt.preventDefault();
+                    var textFrom = document.getElementById("TextFrom").value;
+                    var selectedlanguage = document.getElementById("TranslateLanguage").value;
+                    var parameters = JSON.stringify({LangCode:selectedlanguage,ContentText:textFrom});
+                    var respElm = document.getElementById("ResultText");
+                    respElm.innerText = "";
+
+                    $.ajax({
+                    async: true,
+                        type: "POST",
+                        url: "/api/Translator/TranslateContentAsync",
+                        data: parameters,
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (data) {
+                            if(data!=null)
+                            {
+                                respElm.innerText = data;
+                            }
+                        },
+                        error: function (response) {
+                            if(response!=null)
+                            {
+                                var errorElm = document.getElementById("ErrorText");
+                                errorElm.innerText = response;
+                            }
+                        },
+                        failure: function (response) {
+
+                        }
+                    });
+                }
+            </Script>
+            <style>
+                .scFormDialogFooter{
+                    display: none !important;
+                }
+                .scFormDialogFooter .footerOkCancel{
+                    display: none !important;
+                }
+            </style>
+
+            <div class="scStretch" >
+                <div class="col11">
+                    <Border Background="transparent" Border="none" GridPanel.VAlign="top" Padding="4px 0px 0px 0px">
+                        <GridPanel Class="scFormTable" CellPadding="2" Columns="2" Width="100%" GridPanel.Height="100%">
+                            <Label For="TextFrom" GridPanel.NoWrap="true">
+                                <Literal Text="From Text:" />
+                            </Label>
+                            <Edit ID="TextFrom" Width="100%"/>
+                            <Label GridPanel.NoWrap="true">
+                                <Literal Text="Choose Language:" />
+                            </Label>
+                            <select id="TranslateLanguage">
+                                <option value="es">Spanish</option>
+                                <option value="fr">French</option>
+                            </select>
+                            <Label For="ResultText" GridPanel.NoWrap="true">
+                                <Literal Text="Result:" />
+                            </Label>
+                            <Literal ID="ResultText" Width="100%"/>
+                            <div class="footerOkCancel">
+                                <button id="ClearContentBtn" class="scButton" onClick="clearData(this,event)">Clear</button>
+                                <button id="TranslateContentBtn" class="scButton scButtonPrimary" onClick="translateData(this,event)">Translate</button>
+                                <Literal Text="" />
+                            </div>
+                            <div>
+                                <Literal ID="ErrorText" />
+                            </div>
+                        </GridPanel>
+                    </Border>
+                </div>
+            </div>
+        </FormDialog>
+    </TranslatorDialog>
+</control>

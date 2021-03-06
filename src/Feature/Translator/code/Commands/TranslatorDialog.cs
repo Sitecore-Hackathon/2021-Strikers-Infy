@@ -17,7 +17,7 @@ namespace StrikersInfy.Feature.Translator.Commands
             if (!args.IsPostBack)
             {
                 UrlString urlString = new UrlString(UIUtil.GetUri("control:TranslatorDialog"));
-                SheerResponse.ShowModalDialog(urlString.ToString(), "800", "300", "", true);
+                SheerResponse.ShowModalDialog(urlString.ToString(), "800", "400", "", true);
                 args.WaitForPostBack();
             }
             else
