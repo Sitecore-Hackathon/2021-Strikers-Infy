@@ -1,17 +1,9 @@
 # Hackathon Submission Entry form
 
-> __Important__  
-> 
-> Copy and paste the content of this file into README.md or face automatic __disqualification__  
-> All headlines and subheadlines shall be retained if not noted otherwise.  
-> Fill in text in each section as instructed and then delete the existing text, including this blockquote.
-
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
 ## Team name
 ⟹ Strikers_Infy
 
-##Team Members
+## Team Members
 1. Hemachandhiran Harimoorthy
 2. Yamini Punyavathi
 3. Pavani Gudavalli
@@ -59,6 +51,7 @@ https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/blob/7681c3abe4a638ff9b
 5. Copy the Keys and Location values from here and modify the values in Visual Studio Application
 
 6. Open Visual Studio and open Feature/Translator/ StrikersInfy.Feature.Translator/Biz/ TranslateMgmt.cs file and modify the values
+
 ![image](https://user-images.githubusercontent.com/7092837/110209919-203d4a00-7eb5-11eb-967e-246e79833611.png)
 
 ## Installation instructions
@@ -87,6 +80,7 @@ Once the two package are Installed Open the solution in visual studio Publish th
 1. Login to Sitecore Admin.
 2. Go to Content Editor
 3. Navigate to the Sitecore Ribbon -> Versions-> Translator as shown below in which the highlighted is the new feature that appears
+
 ![image](https://user-images.githubusercontent.com/7092837/110210019-a194dc80-7eb5-11eb-81b1-0ab784cf0fb8.png)
 
 
@@ -96,24 +90,31 @@ Once the two package are Installed Open the solution in visual studio Publish th
 
 5.Provide the text that is to be translated in “From text” and choose desired language as below: 
   Sample text: “How are you?”
+  
   ![image](https://user-images.githubusercontent.com/7092837/110210048-d2751180-7eb5-11eb-81b3-eb65aa99af04.png)
 
 6. Click on the translate button to fetch the desired output as shown below
+
   ![image](https://user-images.githubusercontent.com/7092837/110210061-ea4c9580-7eb5-11eb-9885-fe90521badca.png) 
+  
 
 ### How to add Additional Language
 1. Navigate to path “/sitecore/system/Languages”
 
 2. Right Click on Langauge and choose Insert>Language
+
    ![image](https://user-images.githubusercontent.com/7092837/110210123-431c2e00-7eb6-11eb-9cf6-dd295a96a279.png)
 
 3. Select the language you want and click finish the dialog
+
 ![image](https://user-images.githubusercontent.com/7092837/110210157-63e48380-7eb6-11eb-97aa-8f9a94ee2e04.png)
 
 4. Once Language is Added Select the language and update the Display Name under Appearence Tab. (If its not show Click the View tabd and select Standard Field
+
 ![image](https://user-images.githubusercontent.com/7092837/110210215-9a220300-7eb6-11eb-9bfe-6212d9f53158.png)
 
 5. Now open the Translate dialog it will contain the new language added.
+
 ![image](https://user-images.githubusercontent.com/7092837/110210265-d6edfa00-7eb6-11eb-83a1-1d6433b08bbc.png)
 
 ## Comments
