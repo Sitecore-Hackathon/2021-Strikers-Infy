@@ -11,13 +11,26 @@ You can find a very good reference to Github flavoured markdown reference in [th
 ## Team name
 ⟹ Strikers_Infy
 
+##Team Members
+1. Hemachandhiran Harimoorthy
+2. Yamini Punyavathi
+3. Pavani Gudavalli
+
 ## Category
 ⟹ The best enhancement to the Sitecore Admin (XP) for Content Editors & Marketers
+
 ## Description
 
-⟹ Considering multi-lingual site sitecore Admin or Editors want to create content in different language or marketers are trying to create an email. Provided without inhouse translator the possible way is go to external sites to get the translated data. 
-With this module Sitecore Admin or Editor need not go to external sites. Within Sitecore they can simply open the translator and translate the data to any languages.
-This module used Azure Cognitive Services to translate the data. We are using Free version of the service which provides translation for 2 million words per month. If user requirement is exceeded the limit, we can always change the Pricing tier in Azure.
+Considering multi-lingual site sitecore Admin or Editors want to create content in different language or marketers are trying to create an email. 
+
+Sitecore Does not provide out of the box module for content translation. We have to rely on manual tranlation of content or external sites to do the translation.
+
+With out module Sitecore Admins or Editor need not go to external sites. 
+
+Within Sitecore they can simply open the translator and translate the content and use it.
+
+This module uses Azure Cognitive Services to translate the content. We are using Free version of the service which provides translation for 2 million words per month. 
+If user requirement is exceeded the limit, we can always upgrade the Pricing tier in Azure.
 
 https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/blob/7681c3abe4a638ff9bcdc1c04ce4bb9570a2fb69/docs/Strikers_Infy_Sitecore%20Hackathon%20-2021.docx
 
@@ -31,7 +44,17 @@ https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/blob/7681c3abe4a638ff9b
 
 - Azure Cognitive Services - Azure Cognitive Service is required for this module to work.
 
-_Remove this subsection if your entry does not have any prerequisites other than Sitecore_
+# Azure Cognitive Services Setup in Azure
+1. Login to https://portal.azure.com/
+2. Search for Translator in the search bar and select the “Translator” from marketplace
+![image](https://user-images.githubusercontent.com/7092837/110209884-e53b1680-7eb4-11eb-9955-bf368962f6fe.png)
+3. Fill out the details and click Review and Finish
+![image](https://user-images.githubusercontent.com/7092837/110209901-f84de680-7eb4-11eb-910c-8ca32a9e842f.png)
+4. Once the service is ready go to the created service and select the “Keys and Endpoint” tab
+![image](https://user-images.githubusercontent.com/7092837/110209910-07cd2f80-7eb5-11eb-845d-c4702a25bac8.png)
+5. Copy the Keys and Location values from here and modify the values in Visual Studio Application
+6. Open Visual Studio and open Feature/Translator/ StrikersInfy.Feature.Translator/Biz/ TranslateMgmt.cs file and modify the values
+![image](https://user-images.githubusercontent.com/7092837/110209919-203d4a00-7eb5-11eb-967e-246e79833611.png)
 
 ## Installation instructions
 
