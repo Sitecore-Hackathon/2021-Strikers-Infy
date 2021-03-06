@@ -41,10 +41,23 @@ namespace StrikersInfy.Feature.Translator.Biz
                 HttpResponseMessage response = await client.SendAsync(request).ConfigureAwait(false);
                 // Read response as a string.
                 string result = await response.Content.ReadAsStringAsync();
-                List<TranslationRes> trans = JsonConvert.DeserializeObject<List<TranslationRes>>(result);
-                Translation[] firstRes =trans.Select(r => r.translations).FirstOrDefault();
-                string res=firstRes.Select(r => r.text).FirstOrDefault();
-                return res;
+                if (!string.IsNullOrWhiteSpace(result))
+                {
+                    List<TranslationRes> transList = JsonConvert.DeserializeObject<List<TranslationRes>>(result);
+                    if (transList != null && transList.Count > 0)
+                    {
+                        Translation[] firstRes = transList.Select(r => r.translations).FirstOrDefault();
+                        if (firstRes != null && firstRes.Length > 0)
+                        {
+                            string res = firstRes.Select(r => r.text).FirstOrDefault();
+                            if (!string.IsNullOrWhiteSpace(res))
+                            {
+                                return res;
+                            }
+                        }
+                    }
+                }
+                return null;
             }
         }
     }
