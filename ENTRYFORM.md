@@ -67,7 +67,7 @@ We have created two sitecore packages. Install this two packages using standard 
 1. https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/blob/634a884f035f683ea1fd9198d1fc9050942eae75/Sitecore%20Packages/Languages_Pkg_2021_03_06_001.zip
 2. https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/blob/634a884f035f683ea1fd9198d1fc9050942eae75/Sitecore%20Packages/Translator_Pkg_2021_03_06_001.zip
 
-# Instruction for packiage installation
+## Instruction for package installation
 1. Login to Sitecore Admin.
 2. Click Desktop
 3. Open Development Tools and Select Instalation Wizard
@@ -82,19 +82,34 @@ Once the two package are Installed Open the solution in visual studio Publish th
 3. Choose the destination and click publish
 
 ## Usage instructions
-⟹ Provide documentation about your module, how do the users use your module, where are things located, what do the icons mean, are there any secret shortcuts etc.
+1. Login to Sitecore Admin.
+2. Go to Content Editor
+3. Navigate to the Sitecore Ribbon -> Versions-> Translator as shown below in which the highlighted is the new feature that appears
+![image](https://user-images.githubusercontent.com/7092837/110210019-a194dc80-7eb5-11eb-81b1-0ab784cf0fb8.png)
 
-Include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
+4. Click on Translator, a dialog appears as below
+![image](https://user-images.githubusercontent.com/7092837/110210032-b7a29d00-7eb5-11eb-8f68-eb4492bb8595.png)
 
-![Hackathon Logo](docs/images/hackathon.png?raw=true "Hackathon Logo")
+5.Provide the text that is to be translated in “From text” and choose desired language as below: 
+  Sample text: “How are you?”
+  ![image](https://user-images.githubusercontent.com/7092837/110210048-d2751180-7eb5-11eb-81b3-eb65aa99af04.png)
 
-You can embed images of different formats too:
+6. Click on the translate button to fetch the desired output as shown below
+  ![image](https://user-images.githubusercontent.com/7092837/110210061-ea4c9580-7eb5-11eb-9885-fe90521badca.png) 
 
-![Deal With It](docs/images/deal-with-it.gif?raw=true "Deal With It")
+### How to add Additional Language
+1. Navigate to path “/sitecore/system/Languages”
+2. Right Click on Langauge and choose Insert>Language
+![image](https://user-images.githubusercontent.com/7092837/110210123-431c2e00-7eb6-11eb-9cf6-dd295a96a279.png)
 
-And you can embed external images too:
+3. Select the language you want and click finish the dialog
+![image](https://user-images.githubusercontent.com/7092837/110210157-63e48380-7eb6-11eb-97aa-8f9a94ee2e04.png)
 
-![Random](https://thiscatdoesnotexist.com/)
+4. Once Language is Added Select the language and update the Display Name under Appearence Tab. (If its not show Click the View tabd and select Standard Field)
+![image](https://user-images.githubusercontent.com/7092837/110210215-9a220300-7eb6-11eb-9bfe-6212d9f53158.png)
+
+5. Now open the Translate dialog it will contain the new language added.
+![image](https://user-images.githubusercontent.com/7092837/110210265-d6edfa00-7eb6-11eb-83a1-1d6433b08bbc.png)
 
 ## Comments
 If you'd like to make additional comments that is important for your module entry.
