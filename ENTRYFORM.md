@@ -50,6 +50,7 @@ https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/blob/7681c3abe4a638ff9b
 ![image](https://user-images.githubusercontent.com/7092837/110209884-e53b1680-7eb4-11eb-9955-bf368962f6fe.png)
 
 3. Fill out the details and click Review and Finish
+
 ![image](https://user-images.githubusercontent.com/7092837/110209901-f84de680-7eb4-11eb-910c-8ca32a9e842f.png)
 
 4. Once the service is ready go to the created service and select the “Keys and Endpoint” tab
