@@ -74,7 +74,10 @@ We have created two sitecore packages. Install this two packages using standard 
 Once the two package are Installed Open the solution in visual studio Publish the Feature/Transator/StrikersInfy.Feature.Translator project.
 1. Open Solution in Visual Studio 
 2. Right Click on the Project Feature/Transator/StrikersInfy.Feature.Translator and click publish.
-3. Choose the destination and click publish
+3. Choose the destination and click publish.
+
+![image](https://user-images.githubusercontent.com/7092837/110210537-19fc9d00-7eb8-11eb-9272-4d0868d5af8b.png)
+
 
 ## Usage instructions
 1. Login to Sitecore Admin.
@@ -118,4 +121,3 @@ Once the two package are Installed Open the solution in visual studio Publish th
 ![image](https://user-images.githubusercontent.com/7092837/110210265-d6edfa00-7eb6-11eb-83a1-1d6433b08bbc.png)
 
 ## Comments
-If you'd like to make additional comments that is important for your module entry.
