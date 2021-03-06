@@ -19,7 +19,7 @@ You can find a very good reference to Github flavoured markdown reference in [th
 With this module Sitecore Admin or Editor need not go to external sites. Within Sitecore they can simply open the translator and translate the data to any languages.
 This module used Azure Cognitive Services to translate the data. We are using Free version of the service which provides translation for 2 million words per month. If user requirement is exceeded the limit, we can always change the Pricing tier in Azure.
 
-https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/tree/main/docs/Strikers_Infy_Sitecore Hackathon -2021 (1).docx
+https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/blob/7681c3abe4a638ff9bcdc1c04ce4bb9570a2fb69/docs/Strikers_Infy_Sitecore%20Hackathon%20-2021.docx
 
 ## Video link
 ⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
@@ -27,44 +27,31 @@ https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/tree/main/docs/Strikers
 ⟹ [Replace this Video link](#video-link)
 
 
-
 ## Pre-requisites and Dependencies
 
-⟹ Does your module rely on other Sitecore modules or frameworks?
-      
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
+- Azure Cognitive Services - Azure Cognitive Service is required for this module to work.
 
 _Remove this subsection if your entry does not have any prerequisites other than Sitecore_
 
 ## Installation instructions
-⟹ Write a short clear step-wise instruction on how to install your module.  
 
-> _A simple well-described installation process is required to win the Hackathon._  
-> Feel free to use any of the following tools/formats as part of the installation:
-> - Sitecore Package files
-> - Docker image builds
-> - Sitecore CLI
-> - msbuild
-> - npm / yarn
-> 
-> _Do not use_
-> - TDS
-> - Unicorn
- 
-f. ex. 
+We have created two sitecore packages. Install this two packages using standard install procedure.
 
-1. Start docker environment using `.\Start-Hackathon.ps1`
-2. Open solution in Visual Studio and run build
-3. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-4. ...
-5. profit
+## Sitecore Package files to be installed 
+1. https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/blob/634a884f035f683ea1fd9198d1fc9050942eae75/Sitecore%20Packages/Languages_Pkg_2021_03_06_001.zip
+2. https://github.com/Sitecore-Hackathon/2021-Strikers-Infy/blob/634a884f035f683ea1fd9198d1fc9050942eae75/Sitecore%20Packages/Translator_Pkg_2021_03_06_001.zip
+> Login to Sitecore Admin
+> Click Desktop
+> Open Development Tools and Select Instalation Wizard
+> Upload the Package Translator_Pkg_2021_03_06_001.zip
+> Click Next and select Install
+> Repeat the Installation process for the second package Languages_Pkg_2021_03_06_001.zip
 
-### Configuration
-⟹ If there are any custom configuration that has to be set manually then remember to add all details here.
-
-_Remove this subsection if your entry does not require any configuration that is not fully covered in the installation instructions already_
+## Visual Studio Publish
+Once the two package are Installed Open the solution in visual studio Publish the Feature/Transator/StrikersInfy.Feature.Translator project.
+> Open Solution in Visual Studio 
+> Right Click on the Project Feature/Transator/StrikersInfy.Feature.Translator and click publish.
+> Choose the destination and click publish
 
 ## Usage instructions
 ⟹ Provide documentation about your module, how do the users use your module, where are things located, what do the icons mean, are there any secret shortcuts etc.
